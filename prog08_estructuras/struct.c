@@ -5,7 +5,7 @@ struct Libro{
     char titulo[50];
     int pag;
     char autor[100];
-} lib01;
+};
 
 typedef struct{
     char nombre[100];
