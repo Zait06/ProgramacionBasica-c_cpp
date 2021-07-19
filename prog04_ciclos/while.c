@@ -18,6 +18,10 @@ int main(){
 		printf("2 x %d = %d\n", step, mult);
 		step++;
 	}
+
+	/*
+	*	Mas tareas por hacer
+	*/
 	
 	return 0;
 }

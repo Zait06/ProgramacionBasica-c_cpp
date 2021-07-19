@@ -17,7 +17,7 @@ int main(){
 		mult = 2 * step;
 		printf("2 x %d = %d\n", step, mult);
 		step++;
-	}while(step <= 10);
+	}while(step);
 	
 	return 0;
 }
