@@ -1,8 +1,8 @@
-#include <stdio.h>
-#include <stdlib.h>
+#include <cstdio>
+#include <cstdlib>
 
 int myFunc(int a){
-	return a;
+	return a+5;
 }
 
 int myFunc(int a, int b){

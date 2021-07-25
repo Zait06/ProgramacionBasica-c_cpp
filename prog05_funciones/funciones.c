@@ -5,7 +5,7 @@ void holaMundo(){
 	printf("Hola mundo :D\n");
 }
 
-void sumar(int a, int b){
+void suma(int a, int b){
 	printf("Suma: %d\n", a+b);
 }
 
@@ -16,7 +16,7 @@ int main(){
 	int res;
 	
 	holaMundo();
-	sumar(6,4);
+	suma(6,4);
 	res = resta();
 	printf("Resta: %d\n", res);
 	printf("Multiplicacion: %d", multi(4,2));
