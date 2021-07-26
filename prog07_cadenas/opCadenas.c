@@ -22,6 +22,9 @@ int main(){
 	printf("Tamanio S01: %d\n", tam);
 	printf("Son iguales S01 y S02? %d\n", cmp);
 	
+	printf("Leer una frase: ");
+	// scanf("%[^\n]", s03);
+	printf("\n%s\n", s03);
 	
 	return 0;
 }
