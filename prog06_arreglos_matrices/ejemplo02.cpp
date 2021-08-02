@@ -10,8 +10,8 @@ void clear(int* arreglo){
         arreglo[i] = 0;
 }
 
-void printArr(int arr[]){
-    for(int i=0; i<100; i++)
+void printArr(int arr[], int n){
+    for(int i=0; i<n; i++)
         cout<<arr[i]<<" ";
     cout<<endl;
 }
@@ -29,7 +29,40 @@ void promedio(int arr[], int n){
 }
 
 void moda(int arr[], int n){
-    int moda[100];
+    int moda[100], indice = 0, max = 0;
+    clear(moda);
+
+    for(int i=0; i<n; i++){
+        indice = arr[i];
+        moda[indice]+=1;
+    }
+
+    for(int i=0; i<100; i++){
+        if(moda[i] > max){
+            max = moda[i];
+            indice = i;
+        }
+    }
+    cout<<"La moda es "<<indice<<" con "<<max<<" repeticiones"<<endl;
+}
+
+void mediana(int arr[], int n){
+    // Inicio bubble sort
+    int i, j, aux;
+    for(i=0; i<n-1; i++){
+        for(j=0; j<n-i-1; j++){
+            if(arr[j] > arr[j+1]){
+                // inicio swap
+                aux = arr[j];
+                arr[j] = arr[j+1];
+                arr[j+1] = aux;
+                // fin swap
+            }
+        }
+    }
+    // fin bubble sort
+    aux = n / 2;
+    cout<<"La mediana es "<<arr[aux]<<endl;
 }
 
 int main(){
@@ -42,7 +75,10 @@ int main(){
     cout<<"Ingrese el numero de datos: ";
     cin>>n;
     llenarArr(arr, n);
+    printArr(arr, n);
     promedio(arr, n);
+    moda(arr, n);
+    mediana(arr, n);
 	
 	return 0;
 }
