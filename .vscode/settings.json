@@ -3,6 +3,7 @@
         "cmath": "c",
         "math.h": "c",
         "iostream": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "cstdlib": "cpp"
     }
 }
