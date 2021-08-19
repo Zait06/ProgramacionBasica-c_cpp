@@ -10,7 +10,7 @@ int main(){
     ptr = &a;
     
     // Impresion de datos
-    printf("Dirección del apuntador %p\n", ptr);
+    printf("Direccion del apuntador %p\n", ptr);
     printf("Valor que guarda el apuntador %d\n", *ptr);
 	
 	return 0;
