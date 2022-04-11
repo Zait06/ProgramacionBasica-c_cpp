@@ -1,10 +1,8 @@
 #include <iostream>
 
-using namespace std;
-
 int a = 10;
 
 int main(int argc, char **argv){
-    cout<<"Hola mundo"<<endl;
+    std::cout<<"Hola mundo"<<std::endl;
     return 0;
 }
